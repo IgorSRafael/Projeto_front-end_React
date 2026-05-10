@@ -7,7 +7,7 @@ export default function CartItem(props: CartItemType) {
     : <p>Sem imagem</p>
 
   return (
-    <div className={style.listPrint}>
+    <div className={style.itemSection}>
       {image}
       <div className={style.itemInfo}>
         <h3>{props.name}</h3>
