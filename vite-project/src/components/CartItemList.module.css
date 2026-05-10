@@ -1,0 +1,8 @@
+.listBody {
+    display: felx;
+    flex-direction: column;
+}
+
+.itemWrapper {
+    border-bottom: 1px solid #ddd;
+}

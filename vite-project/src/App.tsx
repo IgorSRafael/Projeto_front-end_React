@@ -1,8 +1,8 @@
-import CartItemList from "./components/CartItemList";
+import CartLayout from "./components/CartLayout"
 
 export function App() {
   return (
-    <CartItemList />
+    <CartLayout />
   );
 }
 

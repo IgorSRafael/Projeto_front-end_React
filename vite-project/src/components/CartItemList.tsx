@@ -1,7 +1,7 @@
-
-import pizzaImg from "../assets/ivan-torres-MQUqbmszGGM-unsplash.jpg"
+import style from "./CartItemList.module.css"
 import type { CartItemType } from "../types/CartItemType"
 import CartItem from "./CartItem"
+import pizzaImg from "../assets/ivan-torres-MQUqbmszGGM-unsplash.jpg"
 
 //lista de produtos no carrinho
 export const items = [
@@ -25,9 +25,21 @@ export const items = [
   }
 ]
 
-// Componente para ser retornado, a exibição dessa lista
-export default function CartItemList() {
-  return items
+/* Função trasformadora para retornar apenas os itens com imagens
+return items
     .filter((item: CartItemType) => item.image!=='')  
     .map((item: CartItemType) => <CartItem {...item}/>)
+*/
+
+// Componente para ser retornado, a exibição dessa lista
+export default function CartItemList() {
+  return ( 
+    <div className={style.listBody}>
+      {items.map((item: CartItemType) => (
+        <div className={style.itemWrapper}>
+          <CartItem {...item}/>
+        </div>))
+      }
+    </div>
+  )
 }
