@@ -1,0 +1,25 @@
+.counterSection {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.quantityProduct {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quantitiesButton {
+    display: flex;
+    flex-direction: column;
+}
+
+.quantitiesButton button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
