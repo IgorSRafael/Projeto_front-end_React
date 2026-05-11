@@ -8,8 +8,8 @@
 .itemSection {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 32px;
+    justify-content: flex-start;
+    gap: 24px;
     padding: 24px 0;
 }
 
@@ -34,8 +34,13 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    min-width: 140px;
-    justify-content: flex-end;
+    min-width: 110px;
+    justify-content: flex-start;
+}
+
+.quantityPrice {
+    min-width: 110px;
+    text-align: right;
 }
 
 .removeButton {

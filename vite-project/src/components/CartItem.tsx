@@ -14,7 +14,7 @@ export default function CartItem(props: Props) {
   : <p>Sem imagem</p>
 
   const [quantity, setQuantity] = useState(1)
-  const subTotalPrice = (props.price * quantity)
+  const quantityPrice = (props.price * quantity)
 
   return (
     <div className={style.itemSection}>
@@ -30,8 +30,8 @@ export default function CartItem(props: Props) {
       </div>
       <div className={style.quantitySection}>
         <CounterQuantity quantity={quantity} setQuantity={setQuantity}/>
-        <span>
-          {subTotalPrice.toLocaleString(
+        <span className={style.quantityPrice}>
+          {quantityPrice.toLocaleString(
           'pt-BR', {style: 'currency', currency: 'BRL'})}
         </span>
         <button onClick={props.onRemove} className={style.removeButton}>

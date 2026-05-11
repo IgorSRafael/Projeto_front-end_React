@@ -1,6 +1,15 @@
 .conteiner {
     display: flex;
-    gap: 40px;
-    padding: 40px;
-    align-items: flex-start;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 24px;
+    gap: 32px;
+}
+
+.list {
+    flex: 2;
+}
+
+.resume {
+    flex: 1;
 }
