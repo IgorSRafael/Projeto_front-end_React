@@ -21,7 +21,7 @@ export default function CounterQuantity({quantity, setQuantity}: Props) {
             <span className={style.quantityProduct}>
                 {quantity}
             </span>
-            <div className={style.quantitiesButton}>
+            <div className={style.quantityButton}>
                 <button onClick={increase}>
                     <ChevronUp size={16}/>
                 </button>

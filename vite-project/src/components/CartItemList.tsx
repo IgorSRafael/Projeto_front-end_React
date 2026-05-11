@@ -37,7 +37,7 @@ export default function CartItemList() {
   return ( 
     <div className={style.bodyList}>
       {items.map((item: CartItemType) => (
-        <div className={style.itemWrapper}>
+        <div className={style.itemInfo}>
           <CartItem {...item}/>
         </div>))
       }
