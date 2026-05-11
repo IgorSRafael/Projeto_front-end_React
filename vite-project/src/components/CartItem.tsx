@@ -1,11 +1,13 @@
-import type { CartItemType } from "../types/CartItemType"
-import style from "./cartItem.module.css"
-import { useState } from "react"
+import type { Product } from "../types/Product"
 import CounterQuantity from "./CounterQuantity"
+
+import style from "./cartItem.module.css"
 import { Trash2 } from "lucide-react"
 
-type Props = CartItemType & {
-  onRemove: () => void;
+type Props = Product & {
+  onRemove: () => void
+  onIncrease: () => void
+  onDecrease: () => void
 }
 
 export default function CartItem(props: Props) {
@@ -13,8 +15,8 @@ export default function CartItem(props: Props) {
   ? <img src={props.image} alt={props.name} className={style.productImage}/> 
   : <p>Sem imagem</p>
 
-  const [quantity, setQuantity] = useState(1)
-  const quantityPrice = (props.price * quantity)
+ 
+  const quantityPrice = (props.price * props.quantity)
 
   return (
     <div className={style.itemSection}>
@@ -29,7 +31,11 @@ export default function CartItem(props: Props) {
         </div>  
       </div>
       <div className={style.quantitySection}>
-        <CounterQuantity quantity={quantity} setQuantity={setQuantity}/>
+        <CounterQuantity 
+          quantity={props.quantity} 
+          onIncrease={props.onIncrease}
+          onDecrease={props.onDecrease}  
+        />
         <span className={style.quantityPrice}>
           {quantityPrice.toLocaleString(
           'pt-BR', {style: 'currency', currency: 'BRL'})}

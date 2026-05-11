@@ -1,31 +1,23 @@
-import type React from "react"
 import style from "./CounterQuantity.module.css"
 import { ChevronUp, ChevronDown } from "lucide-react";
 
 type Props = {
     quantity: number,
-    setQuantity: React.Dispatch<React.SetStateAction<number>>
+    onIncrease: () => void,
+    onDecrease: () => void
 }
 
-export default function CounterQuantity({quantity, setQuantity}: Props) {
-    function increase() {
-        setQuantity(quantity + 1);
-    }
-    function decrease() {
-        if(quantity > 1) {
-            setQuantity(quantity - 1)
-        }
-    }
+export default function CounterQuantity({quantity, onIncrease, onDecrease}: Props) {
     return(
         <>
             <span className={style.quantityProduct}>
                 {quantity}
             </span>
             <div className={style.quantityButton}>
-                <button onClick={increase}>
+                <button onClick={onIncrease}>
                     <ChevronUp size={16}/>
                 </button>
-                <button onClick={decrease}>
+                <button onClick={onDecrease}>
                     <ChevronDown size={16}/>
                 </button>
             </div>
