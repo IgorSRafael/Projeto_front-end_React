@@ -17,7 +17,7 @@ export default function CounterQuantity({quantity, setQuantity}: Props) {
         }
     }
     return(
-        <div className={style.counterSection}>
+        <>
             <span className={style.quantityProduct}>
                 {quantity}
             </span>
@@ -29,6 +29,6 @@ export default function CounterQuantity({quantity, setQuantity}: Props) {
                     <ChevronDown size={16}/>
                 </button>
             </div>
-        </div>
+        </>
     )
 }
