@@ -1,0 +1,14 @@
+.bodyList {
+    display: felx;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.fieldList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid #ddd;
+}

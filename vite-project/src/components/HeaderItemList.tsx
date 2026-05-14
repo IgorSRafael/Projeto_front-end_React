@@ -1,19 +1,17 @@
 import style from "./HeaderItemList.module.css"
 
 type Props = {
-    totalItems: number
+    infoTotalQuantity: number
 }
 
-export default function HeaderItemList({totalItems}: Props) {
-
+export default function HeaderItemList({
+    infoTotalQuantity
+}: Props){
     return (
-        <>
-            <div className={style.headerList}>
-                <h1>Carrinho de compras</h1>
-                <p className={style.infoCountList}>
-                    Você tem {totalItems} itens
-                </p>
-            </div>
-        </>
+        <header className={style.headerList}>
+            <h1>Carrinho de compras</h1>
+            <p>Você tem {infoTotalQuantity} itens</p>
+        </header>
+
     );
 }

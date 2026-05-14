@@ -1,0 +1,25 @@
+.productImage {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.itemSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 24px 0;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.itemInfo h3,
+.itemInfo p {
+    margin: 0;
+}

@@ -1,8 +1,8 @@
-import CartLayout from "./components/CartLayout"
+import PurchaseModal from "./components/PurchaseModal"
 
 export function App() {
   return (
-    <CartLayout />
+    <PurchaseModal />
   );
 }
 

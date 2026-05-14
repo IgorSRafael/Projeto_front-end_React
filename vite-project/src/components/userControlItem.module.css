@@ -1,0 +1,57 @@
+.controlItemSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.itemControl {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.itemControl span {
+    min-width: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttonQuantity {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonQuantity button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtotalControl {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.subtotalControl span {
+    min-width: 110px;
+    text-align: right;
+}
+
+.subtotalControl button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
