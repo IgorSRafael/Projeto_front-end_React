@@ -3,6 +3,7 @@ import  style  from "./PurchaseModal.module.css"
 import { products } from "../data/products"
 import HeaderItemList from "./HeaderItemList";
 import ListItems from "./ListItems";
+import PurchaseSummary from "./PurchaseSummary";
 
 import { useState } from "react";
 
@@ -54,7 +55,7 @@ export default function PurchaseModal() {
     }
 
     return(
-        <div className={style.purchaseModal}>
+        <section className={style.purchaseModal}>
             <section className={style.listItemsSection}>
                 <HeaderItemList 
                     infoTotalQuantity={totalQuantity}
@@ -66,9 +67,9 @@ export default function PurchaseModal() {
                     onRemove={removeItem}
                 />
             </section>
-            <div>
-
-            </div>
-        </div>
+            <section className={style.summarySection}>
+                <PurchaseSummary/>
+            </section>
+        </section>
     )
 }

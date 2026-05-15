@@ -1,12 +1,7 @@
 .purchaseModal {
+    width: 920px;
+    height: 518px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
-    max-width: 1200px;
-    
-    margin: 40px auto;
-    padding: 24px;
-
-    gap: 32px;
+    flex-direction: row;  
+    justify-content: space-between;
 }

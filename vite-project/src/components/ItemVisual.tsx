@@ -1,5 +1,5 @@
 import type { attributes } from "../type/attributes"
-import style from "./item.module.css"
+import style from "./itemVisual.module.css"
 
 // Esse componente representa o item e suas informações
 export default function ItemVisual(props: attributes) {

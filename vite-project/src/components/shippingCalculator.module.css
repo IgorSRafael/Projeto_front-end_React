@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.shippingCalculator {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Inter', sans-serif;
+}
+
+.shippingCalculator header {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.shippingCalculator header h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;;
+}
+
+.shippingSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.shippingSection span {
+    min-width: 110px;
+    text-align: right;
+}
+
+.Calculate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.Calculate button {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background: #52e0c4;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
